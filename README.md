@@ -1,4 +1,5 @@
-# CFD-Agent - LLM agent for automated OpenFOAM lid-driven cavity CFD
+   ![Validation against Ghia benchmark](samples/re100_40x40/validation.png)
+   # CFD-Agent - LLM agent for automated OpenFOAM lid-driven cavity CFD
 
 Type a request in plain English; the agent sets up, meshes, solves and **validates** an OpenFOAM
 lid-driven cavity case and writes a report:
