@@ -1,0 +1,8 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       {{ cls }};
+    {% if location is defined and location %}location    "{{ location }}";
+    {% endif %}object      {{ obj }};
+}

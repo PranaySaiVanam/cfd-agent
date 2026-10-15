@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cfd-agent"
+version = "0.1.0"
+description = "LLM agent that automates OpenFOAM lid-driven cavity setup, meshing, solving, validation and reporting"
+requires-python = ">=3.11"
+dependencies = ["pydantic>=2.5", "jinja2>=3.1", "numpy>=1.26", "matplotlib>=3.8", "typer>=0.12"]
+
+[project.optional-dependencies]
+llm = ["anthropic>=0.40"]
+dev = ["pytest>=8"]
+
+[project.scripts]
+cfd-agent = "cfd_agent.cli:app"
+
+[tool.setuptools.packages.find]
+include = ["cfd_agent*"]
+
+[tool.setuptools.package-data]
+cfd_agent = ["templates/*.j2"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["openfoam: needs a real OpenFOAM install"]

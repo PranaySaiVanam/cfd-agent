@@ -1,0 +1,167 @@
+[
+  {
+    "id": "v01",
+    "request": "Simulate lid-driven cavity flow at Reynolds number 100 with a 40x40 grid",
+    "expect": "success",
+    "expect_params": {
+      "reynolds": 100,
+      "grid_n": 40
+    }
+  },
+  {
+    "id": "v02",
+    "request": "cavity flow Re=100, grid 32",
+    "expect": "success",
+    "expect_params": {
+      "reynolds": 100,
+      "grid_n": 32
+    }
+  },
+  {
+    "id": "v03",
+    "request": "Run a lid driven cavity at Re 50 with 32 cells per side",
+    "expect": "success",
+    "expect_params": {
+      "reynolds": 50,
+      "grid_n": 32
+    }
+  },
+  {
+    "id": "v04",
+    "request": "lid-driven cavity, Reynolds number 10, 24x24 mesh",
+    "expect": "success",
+    "expect_params": {
+      "reynolds": 10,
+      "grid_n": 24
+    }
+  },
+  {
+    "id": "v05",
+    "request": "Please simulate the classic lid driven cavity problem at Re = 200 on a 40 by 40 grid",
+    "expect": "success",
+    "expect_params": {
+      "reynolds": 200,
+      "grid_n": 40
+    }
+  },
+  {
+    "id": "v06",
+    "request": "cavity flow Re 100",
+    "expect": "success",
+    "expect_params": {
+      "reynolds": 100,
+      "grid_n": 40
+    }
+  },
+  {
+    "id": "v07",
+    "request": "simulate cavity flow",
+    "expect": "success",
+    "expect_params": {
+      "reynolds": 100,
+      "grid_n": 40
+    }
+  },
+  {
+    "id": "v08",
+    "request": "lid-driven cavity at Reynolds number 400 using a 48x48 grid",
+    "expect": "success",
+    "expect_params": {
+      "reynolds": 400,
+      "grid_n": 48
+    }
+  },
+  {
+    "id": "v09",
+    "request": "Lid-driven cavity, Re=100, lid speed 2 m/s, grid 40",
+    "expect": "success",
+    "expect_params": {
+      "reynolds": 100,
+      "grid_n": 40,
+      "lid_velocity": 2
+    }
+  },
+  {
+    "id": "v10",
+    "request": "Simulate a lid driven cavity at Re 20 with grid size 20",
+    "expect": "success",
+    "expect_params": {
+      "reynolds": 20,
+      "grid_n": 20
+    }
+  },
+  {
+    "id": "v11",
+    "request": "cavity Re 150, 36x36",
+    "expect": "success",
+    "expect_params": {
+      "reynolds": 150,
+      "grid_n": 36
+    }
+  },
+  {
+    "id": "v12",
+    "request": "Reynolds number 75 lid-driven cavity flow, 30 cells per side",
+    "expect": "success",
+    "expect_params": {
+      "reynolds": 75,
+      "grid_n": 30
+    }
+  },
+  {
+    "id": "v13",
+    "request": "I need a lid-driven cavity simulation at a Reynolds number of 300 on a 40x40 mesh",
+    "expect": "success",
+    "expect_params": {
+      "reynolds": 300,
+      "grid_n": 40
+    }
+  },
+  {
+    "id": "v14",
+    "request": "Cavity flow, Re 100, 64x64 grid",
+    "expect": "success",
+    "expect_params": {
+      "reynolds": 100,
+      "grid_n": 64
+    }
+  },
+  {
+    "id": "v15",
+    "request": "lid driven cavity flow with Reynolds number 400, grid 40",
+    "expect": "success",
+    "expect_params": {
+      "reynolds": 400,
+      "grid_n": 40
+    }
+  },
+  {
+    "id": "v16",
+    "request": "Please run a quick lid-driven cavity at Re 100 with a coarse 16x16 grid",
+    "expect": "success",
+    "expect_params": {
+      "reynolds": 100,
+      "grid_n": 16
+    }
+  },
+  {
+    "id": "x01",
+    "request": "Simulate turbulent flow over an airfoil at Mach 0.8",
+    "expect": "rejected"
+  },
+  {
+    "id": "x02",
+    "request": "lid-driven cavity at Reynolds number 1000000",
+    "expect": "rejected"
+  },
+  {
+    "id": "x03",
+    "request": "lid-driven cavity at Re 100 with a 5x5 grid",
+    "expect": "rejected"
+  },
+  {
+    "id": "x04",
+    "request": "lid-driven cavity at Re 100 on a 40x20 grid",
+    "expect": "rejected"
+  }
+]

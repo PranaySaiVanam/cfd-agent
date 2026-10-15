@@ -1,0 +1,17 @@
+{% set cls = "dictionary" %}{% set obj = "controlDict" %}{% include "header.j2" %}
+
+application     icoFoam;
+startFrom       startTime;
+startTime       0;
+stopAt          endTime;
+endTime         {{ s.end_time }};
+deltaT          {{ s.delta_t }};
+writeControl    timeStep;
+writeInterval   {{ s.write_interval }};
+purgeWrite      0;
+writeFormat     ascii;
+writePrecision  8;
+writeCompression off;
+timeFormat      general;
+timePrecision   8;
+runTimeModifiable true;

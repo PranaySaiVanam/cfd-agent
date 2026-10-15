@@ -1,0 +1,11 @@
+{% set cls = "volScalarField" %}{% set obj = "p" %}{% include "header.j2" %}
+
+dimensions      [0 2 -2 0 0 0 0];
+internalField   uniform 0;
+
+boundaryField
+{
+    movingWall      { type zeroGradient; }
+    fixedWalls      { type zeroGradient; }
+    frontAndBack    { type empty; }
+}

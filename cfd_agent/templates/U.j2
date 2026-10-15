@@ -1,0 +1,21 @@
+{% set cls = "volVectorField" %}{% set obj = "U" %}{% include "header.j2" %}
+
+dimensions      [0 1 -1 0 0 0 0];
+internalField   uniform (0 0 0);
+
+boundaryField
+{
+    movingWall
+    {
+        type            fixedValue;
+        value           uniform ({{ s.lid_velocity }} 0 0);
+    }
+    fixedWalls
+    {
+        type            noSlip;
+    }
+    frontAndBack
+    {
+        type            empty;
+    }
+}
